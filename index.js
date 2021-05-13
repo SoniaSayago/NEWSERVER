@@ -16,10 +16,11 @@ const server = http.createServer(function (req, res) {
         res.end();
     }
 
-    else if (req.url === '/description'){
+    else if (req.url === '/remote'){
         const ip = res.socket.remoteAddress;
         const port = res.socket.remotePort;
-        res.end(`Your IP address is ${ip} and your source port is ${port}.`);
+        res.writeHead(200, {'Content-Type': 'text/plain; charset=utf-8'});
+        res.end(`Tu IP address es ${ip} y tu puerto es ${port}.`);
     }
 
     else if (req.url === '/hora'){
