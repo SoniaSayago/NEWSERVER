@@ -1,7 +1,7 @@
 {
   "name": "NewServer",
   "version": "1.0.0",
-  "description": "Construcción de un servidor web con Node.js con 2 endpoints",
+  "description": "Construcción de un servidor web con Node.js con 2 endpoints usando modulo HTTP",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
